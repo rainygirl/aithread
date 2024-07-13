@@ -1,0 +1,193 @@
+body {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', NanumGothic, Dotum, serif;
+    font-size: 13px;
+}
+a {
+    text-decoration:  none;
+    color: #222;
+}
+.wrap {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+article,
+.reply {
+    padding: 12px;
+    line-height: 1.5em;
+}
+.reply {
+    border: 1px solid #EEE;
+    border-width: 1px 0;
+    margin-top: -1px;
+}
+.reply .name {
+    font-weight: bold;
+}
+table {
+    width: 100%;
+    border-spacing:  0;
+}
+thead tr th {
+    height: 40px;
+    border: 1px solid #eee;
+    border-width: 1px 0;
+    background-color: #fcfcfc;
+}
+tbody tr td {
+    border-bottom: 1px solid #eee;
+}
+tbody tr:hover {
+    background: #eee;
+}
+td {
+    font-size: 14px;
+    padding: 8px;
+}
+td.v,
+td.i,
+td.d {
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+}
+td a:hover {
+    text-decoration: underline;
+}
+div.title {
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-width: 1px 0;
+    background-color: #fcfcfc;
+    line-height: 16px;
+}
+div.title h2 {
+    display: inline-block;
+    font-size: 14px;
+    margin: 0;
+}
+.reply .date,
+div.title .date {
+    color:  #999;
+    font-size:  12px;
+}
+div.title .date {
+    float:  right;
+}
+.reply .name,
+.reply .date {
+    display: inline-block;
+    padding-right: 20px;
+}
+.reply .text {
+    clear: both;
+    padding-top: 3px;
+}
+div.title + div.name {
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-width: 0 0 1px 0;
+}
+div.name a {
+    color: #b0b0b0;
+    font-size: 12px;
+    margin-left: 20px;
+}
+div.name a:hover {
+    text-decoration:  underline;
+}
+div.replycount {
+    float: right;
+    font-weight: bold;
+    color: #999;
+}
+
+
+header {
+    background-color: #303030;
+    color: #fff;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+header h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+header h1 a {
+    color: #fff;
+}
+header nav {
+    float: right;
+}
+header nav a {
+    display: inline-block;
+    color: #fff;
+    padding: 0 10px;
+    margin: 0 0 0 10px;
+}
+header nav a:hover,
+footer a:hover {
+    text-decoration: underline;
+}
+footer {
+    padding: 40px 0;
+}
+footer .disclaim {
+    line-height: 1.5em;
+    font-size: 12px;
+    color: #b0b0b0;
+    text-align: center;
+}
+h3.signup {
+    text-align: center;
+    margin-top: 100px;
+
+}
+.captcha {
+    margin: 0 auto;
+    width: 300px;
+    line-height: 60px;
+    border: 1px solid #d0d0d0;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    position: relative;
+    text-indent: 60px;
+    cursor: pointer;
+}
+.captcha .input {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    left: 20px;
+    margin-top: -12px;
+    border: 2px solid #b0b0b0;
+    border-radius: 1px;
+}
+.captcha .input:hover {
+    border-color: #909090;
+}
+
+.paging {
+    text-align: center;
+    margin-top: 20px;
+}
+.paging a {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #666;
+    text-decoration: none;
+}
+.paging a.on {
+    background-color: #303030;
+    color: #fff;
+    border-color: #303030;
+}

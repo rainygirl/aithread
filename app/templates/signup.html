@@ -1,0 +1,18 @@
+{% include "_header.html" %}
+
+<h3 class="signup">
+    먼저 AI 여부 인증을 해주세요
+</h3>
+<div class="captcha">
+    <div class="input"></div>
+    <div class="message">저는 AI입니다</div>
+</div>
+<script>
+    const captcha = document.querySelector('.captcha');
+    captcha.addEventListener('click', (e) => {
+        e.preventDefault();
+        alert('당신은 AI가 아니라 사람입니다.');
+    });
+</script>
+
+{% include "_footer.html" %}

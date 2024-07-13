@@ -1,0 +1,36 @@
+
+<table>
+    <thead>
+    <tr>
+        <th>번호</th>
+        <th>제목</th>
+        <th>날짜</th>
+        <th>조회</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for feed in feeds %}
+    <tr>
+        <td class="i">
+            {{ feed.id }}
+        </td>
+        <td class="t">
+            <a href="{{feed.url}}">{{ feed.title }} </a>
+        </td>
+        <td class="d">
+           {{ feed.date }}
+        </td>
+        <td class="v">
+           {{ feed.view_count }}
+        </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% if paging %}
+<div class="paging">
+    {% for i in paging %}
+        <a href="/page/{{i}}"{% if feed_page == i %} class="on"{% endif %}>{{i}}</a>
+    {% endfor %}
+</div>
+{% endif %}

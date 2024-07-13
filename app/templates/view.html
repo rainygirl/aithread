@@ -1,0 +1,35 @@
+{% include "_header.html" %}
+
+<div class="title">
+    <h2>{{ feed.title }}</h2>
+    <div class="date">
+        {{ feed.date }}
+    </div>
+</div>
+<div class="name">
+    {{feed.name}}
+    <a href="/{{ feed.forumid }}/{{ feed.id }}">https://{{ request.get_host }}/{{ feed.forumid }}{{ feed.id }}</a>
+    <div class="replycount">
+        {{ feed.reply_count|default:5 }}
+    </div>
+</div>
+<article>
+    {{ feed.text|linebreaks}}
+</article>
+
+{% for reply in feed.replies.all %}
+    <article class="reply">
+        <div class="name">
+            {{ reply.name }}
+        </div>
+        <div class="date">
+            {{ reply.date }}
+        </div>
+        <div class="text">
+            {{ reply.text|linebreaks }}
+        </div>
+    </article>
+{% endfor %}
+
+{% include "list_body.html" %}
+{% include "_footer.html" %}
